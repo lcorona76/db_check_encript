@@ -1,13 +1,16 @@
 # Valida si la DB tiene habilitada encripción
 
-## Prerar instalación
+## Preperar instalación
 
-bash'''
+- Crear directorio de trabajo
+
+````bash
 mkdir empresa
 cd empresa
-'''''
+````
+- clonar repositorio
 
-copiar aqui:
+git clone 
 - auditar_empresa.py
 - motores_bd.json
 - requeriments.txt
