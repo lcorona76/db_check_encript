@@ -1,4 +1,4 @@
-# Valida si la DB tiene habilitada encripción
+# Script para valiar si la DB tiene habilitada encripción
 
 ## Requerimientos
 - Python 3.13.2
