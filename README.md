@@ -41,6 +41,7 @@ pip install -r requeriments.txt
 ````bash
 vim motores_bd.json    #archivo de configuraciones
 ````
+- Por ejemplo:
 <img width="477" height="862" alt="image" src="https://github.com/user-attachments/assets/ca84d827-2712-4584-bd81-bed4a079054e" />
 
 # ejecutar auditor DBs
