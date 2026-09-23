@@ -1,8 +1,20 @@
 # Script para valiar si la DB tiene habilitada encripción
 
 ## Requerimientos
+#### El script se valido con las siguientes versiones
 - Python 3.13.2
 - pip 26.1.2
+#### Librerías necesarias
+- cffi==2.1.1
+- cryptography==50.0.1
+- mysql-connector==2.2.9
+- mysql-connector-python==26.7.0
+- oracledb==4.0.2
+- psycopg2==2.9.12
+- psycopg2-binary==2.9.12
+- pycparser==3.0
+- pymssql==2.3.13
+- typing_extensions==4.16.0
 
 ## Preperar instalación
 
