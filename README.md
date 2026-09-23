@@ -1,47 +1,55 @@
 # Valida si la DB tiene habilitada encripción
 
+## Requerimientos
+- Python 3.13.2
+- pip 26.1.2
+
 ## Preperar instalación
 
 - Crear directorio de trabajo
+- Clonar repositorio
+- Cambiar a directorio de trabajo
 
 ````bash
-mkdir empresa
-cd empresa
+mkdir folder_trabajo
+cd folder_trabajo
+git clone https://github.com/lcorona76/db_check_encript.git
+cd db_check_encript
 ````
-- clonar repositorio
+- Crear entorno virtual de trabajo
+- Activar entorno virtual
+- Instalar dependencias
 
-git clone 
-- auditar_empresa.py
-- motores_bd.json
-- requeriments.txt
-
-#################################
-Levantar ambiente virtual
-#################################
-python -m venv .empresa
-.\.empresa\Scripts\Activate.ps1
-
-#################################
-Instalar librerias necesarias
-#################################
+````bash
+python -m venv .venv
+````
+- En Windows
+````bash
+.\.venv\Scripts\Activate.ps1
+````
+- En Linux
+````bash
+./.venv/Scripts/Activate
+````
+````bash
 pip install -r requeriments.txt
+````
 
-#################################
-Configurar conexión DBS
-#################################
+# Configurar conexión DBS
+- Editar Archivo y configurar datos de acceso de cada base de datos
 
-vi motores_bd.json    #archivo de configuraciones
+````bash
+vim motores_bd.json    #archivo de configuraciones
+````
+<img width="477" height="862" alt="image" src="https://github.com/user-attachments/assets/ca84d827-2712-4584-bd81-bed4a079054e" />
 
+# ejecutar auditor DBs
 
-#################################
-ejecutar auditor DBs
-#################################
+$python auditar_empresa.py
 
-auditar_empresa.py
-
-SALIDA#
-
-PS C:\Temp\python\empresa> python .\auditar_empresa.py
+# SALIDA
+````bash
+PS C:\Temp> python .\auditar_empresa.py
 ======================================================================
  INICIANDO AUDITORÍA CORPORATIVA DE CIFRADO
  Total de objetivos cargados desde el inventario: 4
@@ -68,4 +76,5 @@ PS C:\Temp\python\empresa> python .\auditar_empresa.py
  ✅ Conexiones/Auditorías Exitosas: 4
  ❌ Fallas (Red/Credenciales/No Soportados): 0
 ======================================================================
-PS C:\Temp\python\empresa>
+PS C:\Temp>
+````
