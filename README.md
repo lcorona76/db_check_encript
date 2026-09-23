@@ -46,11 +46,11 @@ vim motores_bd.json    #archivo de configuraciones
 
 # ejecutar auditor DBs
 
-$python auditar_empresa.py
+$python auditar_dbs.py
 
 # SALIDA
 ````bash
-PS C:\Temp> python .\auditar_empresa.py
+PS C:\Temp> python .\auditar_dbs.py
 ======================================================================
  INICIANDO AUDITORÍA CORPORATIVA DE CIFRADO
  Total de objetivos cargados desde el inventario: 4
