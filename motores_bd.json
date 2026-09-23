@@ -1,0 +1,38 @@
+[
+  {
+    "id": "SRV-NUCLEO-MS01",
+    "motor": "sql_server",
+    "ip": "192.168.75.132",
+    "puerto": 1433,
+    "usuario": "sa",
+    "contrasena": "SecurePassword123!",
+    "base_datos": "master"
+  },
+  {
+    "id": "SRV-VENTAS-MY02",
+    "motor": "mysql",
+    "ip": "192.168.75.132",
+    "puerto": 3308,
+    "usuario": "root",
+    "contrasena": "password",
+    "base_datos": "mysql"
+  },
+  {
+    "id": "SRV-PROD-MA01",
+    "motor": "mariadb",
+    "ip": "192.168.75.132",
+    "puerto": 3307,
+    "usuario": "root",
+    "contrasena": "password",
+    "base_datos": "mysql"
+  },
+  {
+    "id": "SRV-APP-PG01",
+    "motor": "postgresql",
+    "ip": "192.168.75.132",
+    "puerto": 5432,
+    "usuario": "postgres",
+    "contrasena": "password",
+    "base_datos": "postgres"
+  }
+]
